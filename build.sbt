@@ -6,6 +6,7 @@ lazy val root = project
     name := "http4s-ember-zio",
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
+    run / fork := true,
     libraryDependencies ++= Seq(
       "dev.zio" %% "zio" % "2.0.11",
       "dev.zio" %% "zio-interop-cats" % "23.0.0.4",
